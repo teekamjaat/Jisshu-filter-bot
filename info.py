@@ -19,10 +19,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5469498838').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/teekam_jaat") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001786924542'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+sBQBAjfyKqM5YWY1')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002046685711').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "")
@@ -34,7 +34,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tjbotdatabase')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001786924542'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002355189744')) # The movie you upload in it will be deleted from the bot.
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001786924542'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1001786924542')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002001530907'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1001786924542') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001786924542')) # 
@@ -49,12 +49,12 @@ TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "40953a3cd91c66b8fb8ebc21e301dd3d87e29607")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'shortxlinks.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '')
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
+SHORTENER_API2 = environ.get("SHORTENER_API2", "40953a3cd91c66b8fb8ebc21e301dd3d87e29607")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'shortxlinks.com')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "40953a3cd91c66b8fb8ebc21e301dd3d87e29607")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'shortxlinks.com')
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "200"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "200"))
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi", "marathi"]
@@ -69,7 +69,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://i.ibb.co/qpxpGmC/image.jpg https://i.ibb.co/DQ35zLZ/image.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://envs.sh/GIt.jpg https://envs.sh/j2m.mp4')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
@@ -83,9 +83,9 @@ AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 IS_SEND_MOVIE_UPDATE = is_enabled('IS_SEND_MOVIE_UPDATE', False) # Don't Change It ( If You Want To Turn It On Then Turn It On By Commands) We Suggest You To Make It Turn Off If You Are Indexing Files First Time.
 PORT = environ.get('PORT', '5000')
-MAX_BTN = int(environ.get('MAX_BTN', '8'))
+MAX_BTN = int(environ.get('MAX_BTN', '10'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
-DELETE_TIME = int(environ.get('DELETE_TIME', 300))
+DELETE_TIME = int(environ.get('DELETE_TIME', 120))
 IMDB = is_enabled('IMDB', False)
 FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
